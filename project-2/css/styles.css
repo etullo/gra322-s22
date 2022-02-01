@@ -6,12 +6,29 @@ html {
 
 body {
     font-family: 'Libre Franklin', sans-serif;
-    color: #f2f2f2;
-    background-color:#444444;
 }
 
 h1 {
-    font-weight:500px;
+    color: white;
+    font-weight:300;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
 }
 
 .grid {
@@ -22,3 +39,52 @@ h1 {
 .grid > * {
     grid-column: main;
 }
+
+header {
+    background-color: var(--gray-dark);
+    padding: 1rem 0;
+}
+
+.overview {
+    background-color: var(--gray);
+    color: white;
+    padding: 4rem 0;
+}
+
+figure {
+    margin-top: 2rem;
+}
+
+figure img {
+    margin-bottom: 1rem;
+}
+
+figcaption {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 800px) {
+    .two-column {
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.sample-spreads {
+    background-color: #fff;
+    color: var(--gray-dark);
+    padding: 4rem 0;
+
+}
+
+footer {
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+    padding: 1rem 0 0 0;    
+}
+
