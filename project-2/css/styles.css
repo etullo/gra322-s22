@@ -66,6 +66,22 @@ figcaption {
     letter-spacing: 1px;
 }
 
+.sample {
+    background-color: #fff;
+    color: var(--gray-dark);
+    padding: 5rem 0;
+}
+
+footer {
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+    padding: 1.5rem;
+}
+
+footer p{
+    margin-bottom:0;
+}
+
 @media screen and (min-width: 800px) {
     .two-column {
         display: grid;
@@ -73,18 +89,3 @@ figcaption {
         grid-template-columns: 1fr 1fr;
     }
 }
-
-
-.sample-spreads {
-    background-color: #fff;
-    color: var(--gray-dark);
-    padding: 4rem 0;
-
-}
-
-footer {
-    background-color: var(--gray-light);
-    color: var(--gray-dark);
-    padding: 1rem 0 0 0;    
-}
-
