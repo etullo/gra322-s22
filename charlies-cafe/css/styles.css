@@ -1,0 +1,42 @@
+header {
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    }
+
+.header-logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width:30vw;
+    z-index: 3;
+}
+
+}    
+.video-container {
+    display: flex;
+    height: 90vw;
+    position: top center;
+    size: cover;
+    z-index: -1;
+}
+
+.color-overlay {
+    background-color:#434343;
+    opacity: 100%;
+    z-index: 999;
+}
+
+.blur {
+    background-color: #434343;
+    filter: blur(2px);   
+    left: 0;
+    position:absolute;
+    size: cover;
+    top: 0;
+    z-index: 1;
+  }
+}
