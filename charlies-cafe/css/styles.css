@@ -2,49 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: '', sans-serif;
+    font-family: 'Bebas Neue Pro', sans-serif;
 }
 
+/*hero area and navigation*/
 .showcase {
     position: absolute;
     right: 0;
     width: 100%;
-    min-height: 100vh;
-    padding: 100px;
+    min-height: 90vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 2;
-}
-
-.showcase header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 0px;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.toggle {
-    position: relative;
-    width: 60px;
-    height:60px;
-    background: url('menu.png');
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: center;
-    cursor: pointer;
-}
-
-.toggle.active {
-    background: url('close.png');
-    background-repeat: no-repeat;
-    background-size: 25px;
-    background-position: center;
 }
 
 .showcase video {
@@ -54,13 +24,12 @@
     width: 100%;
     height:100%;
     object-fit: cover;
-
 }
 
-.header-logo {
-    position: relative;
+.showcase img {
     z-index: 10;
-    width: 30vw;
+    max-width: 70vw;
+    max-height: 50vh;
 }
 
 .overlay {
@@ -74,5 +43,330 @@
     z-index: 1;
   }
 
+nav{
+    position: absolute;
+    top: 0px;
+    padding: 32px 80px;
+    width: 100%;
+    z-index: 1000;
+}
+.nav-links{
+    float: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    letter-spacing: 5px;
+  }
 
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    opacity: 55%;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+  }
+
+nav ul li a:hover{
+    opacity:100%;
+    text-decoration: underline;
+    text-decoration-color: #F07300;
+  }
+.burger {
+    display: none;
+    z-index:1001;
+}
+.burger div {
+    width: 25px;
+    height: 1px;
+    background-color: white;
+    margin: 10px;
+    transition: all 0.3 ease;
+}
+
+.nav-active {
+    transform: translateX(0);
+}
+
+.toggle.line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+    color: black;
+}
+
+.toggle.line2 {
+    opacity: 0;
+}
+
+.toggle.line1 {
+    transform: rotate(45deg) translate(-5px,-6px);
+    color: black;
+}
+
+/*body content*/
+
+h1 {
+    font-size: 28pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 5pt;
+    margin-top: 10vh;
+    background-color:#F07300;
+    padding: 10px 0px 11px 50px;
+    max-width: 75%;
+}
+
+h2{
+    font-size:24pt;
+    letter-spacing: 5pt;
+    text-transform: uppercase;
+    margin: 60px 0px 20px 0px;
+}
+
+h3 {
+    font-size: 20pt;
+    letter-spacing: 2pt;
+}
+
+p {
+    font-size: 18pt;
+    font-weight: 300;
+    line-height: 26pt;
+    letter-spacing: 1.5pt;
+}
+
+.main {
+    position: absolute;
+    top: 90vh;
+}
+
+.about p {
+    margin: 40px 50px 50px 50px;
+}
+
+.about img {
+    height: 375px;
+}
+
+
+.main ul {
+    font-size: 18pt;
+    font-weight: 300;
+    line-height: 26pt;
+    letter-spacing: 1.5pt;
+    list-style:none;
+}
+.main img {
+    object-fit: cover;
+    height: 50vh;
+    width: 100vh;
+    object-position: 72.5% 50%;
+}
+
+.menu {
+    margin: 0px 70px 0px 50px;
+    padding-bottom: 36px;
+    
+}
+
+.menu-container {
+    padding-top: 1px;
+    background-image: url(/charlies-cafe/img/marble.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*menu sections*/
+
+
+.espressosection {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.otherdrinkssection {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.extrassection {
+    margin-top: 25px;
+}
+
+.extramilksusbs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.milksubs {
+    padding-left: 32px;
+}
+
+
+.s-prices {
+    width:90px;
+}
+
+.lastaddons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastprices {
+    width: 90px;
+}
+
+.paninis {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.p-prices{
+    width:90px;
+}
+
+.otherfoods {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.gelatos {
+    display:flex;
+    justify-content: space-between;
+}
+
+.menu-decoration {
+    border-right: 21px #F07300;
+    z-index: 1002;
+}
+
+
+
+/*directions section*/
+.directions h1{
+    margin-top:38px;
+}
+
+.directions p{
+    margin: 0px 50px 0px 50px;
+}
+
+.directions-summary {
+    margin-top: 40px;
+}
+.directions h3{
+    margin: 25px 70px 0px 50px;
+}
+
+.directions img {
+    margin-top: 30px;
+}
+
+
+
+/*footer*/
+footer {
+    padding: 54px 50px 44px 50px;
+    background-color:#333637;
+    z-index:1000;
+}
+
+footer h2 {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1.7px;
+    font-weight: 400;
+    margin-bottom:20px;
+    margin-top: 0px;
+}
+
+footer p {
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+footer ul li {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 9px
+
+}
+.contactinfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    max-width: 92px;
+    max-height: 80px;
+    object-fit:scale-down;
+    margin-top: 8px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+}
+
+.social-icons img {
+    max-width: 35px;
+    max-height: 35px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+    .nav-links{
+        float: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+/*hero area and navigation*/
+
+    nav {
+        overflow: hidden;
+        padding: 32px 50px;
+        height: 100vh;
+    }
+
+    .nav-links{
+        position: absolute;
+        width: 67%;
+        right:0px;
+        height: 100vh;
+        padding-top: 95px;
+        top:0;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    nav ul li {
+        margin:50px 50px 0px 50px;
+        opacity: 0;
+    }
+
+    nav ul li a {
+        color: black;
+   }
+
+    .burger {
+        display: block;
+        float: right;
+        z-index: 1001
+    }
+}
 
