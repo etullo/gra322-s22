@@ -7,46 +7,46 @@
 
 /*hero area and navigation*/
 .showcase {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    min-height: 90vh;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    min-height: 90vh;
+    position: absolute;
+    right: 0;
+    width: 100%;    
     z-index: 2;
 }
 
 .showcase video {
+    height:100%;
+    left:0;
+    object-fit: cover;
     position: absolute;
     top:0;
-    left:0;
-    width: 100%;
-    height:100%;
-    object-fit: cover;
+    width: 100%;   
 }
 
 .showcase img {
-    z-index: 10;
-    max-width: 70vw;
     max-height: 50vh;
+    max-width: 70vw;
+    z-index: 10;
 }
 
 .overlay {
     background-color: #434343;
     filter: blur(2px) opacity(62%);   
-    width: 100%;
     height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
+    width: 100%;
     z-index: 1;
   }
 
 nav{
+    padding: 32px 80px;
     position: absolute;
     top: 0px;
-    padding: 32px 80px;
     width: 100%;
     z-index: 1000;
 }
@@ -54,19 +54,18 @@ nav{
     float: right;
 }
 nav ul li {
-    list-style: none;
     display: inline-block;
+    list-style: none;
     letter-spacing: 5px;
   }
 
 nav ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
     color: white;
+    font-size: 24px;
     opacity: 55%;
-    font-size: 17px;
-    text-transform: uppercase;
     padding: 0px 20px;
+    text-decoration: none;
+    text-transform: uppercase;    
   }
 
 nav ul li a:hover{
@@ -79,11 +78,11 @@ nav ul li a:hover{
     z-index:1001;
 }
 .burger div {
-    width: 25px;
-    height: 1px;
     background-color: white;
+    height: 1px;
     margin: 10px;
     transition: all 0.3 ease;
+    width: 25px;
 }
 
 .nav-active {
@@ -104,37 +103,51 @@ nav ul li a:hover{
     color: black;
 }
 
+
+
 /*body content*/
+.content {
+    margin-left: 85px;
+}
 
 h1 {
-    font-size: 28pt;
-    text-transform: uppercase;
-    font-weight: bold;
     color: #000;
-    letter-spacing: 5pt;
-    margin-top: 10vh;
-    background-color:#F07300;
-    padding: 10px 0px 11px 50px;
-    max-width: 75%;
-}
-
-h2{
-    font-size:24pt;
+    font-size: 36pt;
+    font-weight: bold;
     letter-spacing: 5pt;
     text-transform: uppercase;
-    margin: 60px 0px 20px 0px;
+    }
+
+h1 span {
+    background-color: #F07300;
+    padding: 10px 40px 11px 85px;
 }
+  
+h2 {
+    font-size: 36pt;
+    font-weight: bold;
+    letter-spacing: 5pt;
+    margin-left: 85px;
+    padding-bottom: 30px;
+    padding-top: 35px;
+    text-transform: uppercase;    
+} 
 
 h3 {
-    font-size: 20pt;
-    letter-spacing: 2pt;
+    font-size: 28pt;
+    font-weight: bold;
 }
 
 p {
-    font-size: 18pt;
-    font-weight: 300;
+    font-size: 24pt;
+    font-weight: 350;
     line-height: 26pt;
     letter-spacing: 1.5pt;
+}
+
+.about p {
+    padding-bottom: 50px;
+    padding-top: 40px;
 }
 
 .main {
@@ -142,147 +155,121 @@ p {
     top: 90vh;
 }
 
-.about p {
-    margin: 40px 50px 50px 50px;
-}
-
-.about img {
-    height: 375px;
+img {
+    max-width: 100%;
 }
 
 
-.main ul {
+.twocolumn {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+    margin-right: 85px;
+    margin-top: 10vh;
+  }
+
+ul {
     font-size: 18pt;
-    font-weight: 300;
-    line-height: 26pt;
+    font-weight: 350;
     letter-spacing: 1.5pt;
+    line-height: 26pt;
     list-style:none;
 }
-.main img {
-    object-fit: cover;
-    height: 50vh;
-    width: 100vh;
-    object-position: 72.5% 50%;
+
+.address {
+    padding-top: 30px;
 }
 
-.menu {
-    margin: 0px 70px 0px 50px;
-    padding-bottom: 36px;
-    
+.hours {
+    padding-top: 30px;
 }
-
-.menu-container {
-    padding-top: 1px;
-    background-image: url(/charlies-cafe/img/marble.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+  
 
 
 /*menu sections*/
+.menu-container {
+    background-image: url(/img/marble.jpg);
+    background-size: cover;
+    padding-top: 71px;
+  }
+  
+  .menu-decoration {
+    border-right: 5.83vw solid #f07300;
+  }
+  
+  
+  table {
+    font-size: 24pt;
+    font-weight: 350;
+    min-width: 250px;
+    max-width: 350px;
+    padding-bottom: 65px;
+  }
+  
+  table .header {
+    font-size: 28pt;
+    font-weight: bold;
+    min-width: 200px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+  }
+  
+  th {    
+    padding-bottom: 25px;
+    font-weight: 350;
+    text-align: left;
+  }
+  
+  td {
+    height: 25px;
+    padding-bottom:19px;
+    padding-right: 20px;
+  }
 
 
-.espressosection {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.otherdrinkssection {
-    display: flex;
-    margin-top: 25px;
-    justify-content: space-between;
-}
-
-.extrassection {
-    margin-top: 25px;
-}
-
-.extramilksusbs {
-    display: flex;
-    justify-content: space-between;
-}
-
-.milksubs {
-    padding-left: 32px;
-}
-
-
-.s-prices {
-    width:90px;
-}
-
-.lastaddons {
-    display: flex;
-    justify-content: space-between;
-}
-
-.lastprices {
-    width: 90px;
-}
-
-.paninis {
-    display:flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
-
-.p-prices{
-    width: 90px;
-}
-
-.otherfoods {
-    display:flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
-
-.gelatos {
-    display:flex;
-    justify-content: space-between;
-}
-
-.menu-decoration {
-    border-right: 21px #F07300;
-    z-index: 1002;
-}
+  .menus-container {
+    display: grid;
+    gap:10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 85px;
+    margin-right: 85px;
+    vertical-align: top;
+  }
+  
 
 
 
 /*directions section*/
-.directions h1{
-    margin-top:38px;
-}
-
-.directions p{
-    margin: 0px 50px 0px 50px;
-}
 
 .directions-summary {
     margin-top: 40px;
-}
-.directions h3{
-    margin: 25px 70px 0px 50px;
+    max-width: 500px;
 }
 
 .directions img {
-    margin-top: 30px;
+    height: 600px;
+    object-fit: cover;
+    object-position:50% 40% ;
+    width: 100vh;
 }
+
 
 
 
 /*footer*/
 footer {
-    padding: 54px 50px 44px 50px;
     background-color:#333637;
+    margin-top: 82px;
+    padding: 54px 0px 44px 0px;
     z-index:1000;
 }
 
-footer h2 {
+footer h3 {
     color: white;
     font-size: 18px;
-    letter-spacing: 1.7px;
     font-weight: 400;
+    letter-spacing: 1.7px;
     margin-bottom:20px;
     margin-top: 0px;
 }
@@ -290,69 +277,123 @@ footer h2 {
 footer p {
     color: white;
     font-size: 18px;
+    font-weight: 300;
     line-height: 24px;
 }
 
 footer ul li {
     color: white;
     font-size: 18px;
-    margin-bottom: 9px
+    font-weight:300;
+    margin-bottom: 9px;
+    
 
-}
-.contactinfo {
-    display: flex;
-    justify-content: space-between;
+
 }
 
 footer img {
-    max-width: 92px;
-    max-height: 80px;
-    object-fit:scale-down;
     margin-top: 8px;
+    max-height: 72px;
+    max-width: 92px;
+    object-fit:scale-down;
+    
 }
 
 .social-icons {
     display: flex;
+    font-size: 20pt;
     justify-content: space-between;
     margin-top: 42px;
 }
 
-.social-icons img {
-    max-width: 35px;
-    max-height: 35px;
-    filter: invert(100%);
-    cursor: pointer;
+a {
+  color: white;
+  text-decoration: none; 
 }
 
+
+
 @media screen and (max-width:1000px) {
+
+/*hero area and navigation*/
     .nav-links{
         float: none;
         text-align: center;
     }
+
+/*type sizes and margins*/    
+    h1 {
+        font-size: 32pt;
+    }
+
+    h2 {
+        font-size: 32pt;
+    } 
+
+    h3 {
+        font-size: 24pt;
+    }
+
+    table {
+        font-size: 24pt;
+    }
+
+    table .header {
+        font-size: 24pt;
+    }
+
+    .twocolumn {
+        gap: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .twocolumn img {
+        height: 354px;
+        object-fit: cover;
+        object-position:50% 50%;
+        padding-left: 85px;
+        width: 100%;
+    }
+
+   .directions img {
+        height: 491px;
+        object-position: 50% 30%;
+    }
+    .address {
+        padding-right: 55px;
+    }
+}
+
+@media (min-width:575px) and (max-width:1000px){
+    .directions-items {
+        display: flex;
+        padding-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 575px) {
+
 /*hero area and navigation*/
 
     nav {
-        overflow: hidden;
-        padding: 32px 50px;
         height: 100vh;
+        overflow: hidden;
+        padding: 32px 50px;  
     }
 
     .nav-links{
-        position: absolute;
-        width: 67%;
-        right:0px;
-        height: 100vh;
-        padding-top: 95px;
-        top:0;
         background-color: white;
         display: flex;
         flex-direction: column;
+        height: 100vh;
+        padding-top: 95px;
+        position: absolute;
+        right:0px;
         text-align: left;
+        top:0;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        width: 67%;
     }
     nav ul li {
         margin:50px 50px 0px 50px;
@@ -368,5 +409,93 @@ footer img {
         float: right;
         z-index: 1001
     }
+
+/*type sizes*/
+    .content {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    h1 {
+        font-size: 28pt;
+    }
+    
+    h1 span {
+        padding: 10px 40px 11px 51px;
+    }
+
+    h2 {
+        font-size: 28pt;
+        margin-left: 50px;
+    }
+
+    h3 {
+        font-size: 20pt;
+    }
+
+    p {
+        font-size: 20pt;
+    }    
+
+    table {
+        font-size: 20pt;
+    }
+
+    table .header {
+        font-size: 20pt;
+    }
+
+    .menus-container {
+        margin-left: 50px;
+        margin-right: 50px;   
+    }
+
+    .twocolumn {
+        gap: 0;
+        grid-template-columns: 1fr;
+        margin-bottom: 0px;
+        margin-right: 0px;  
+    }
+
+    .twocolumn img {
+        height: 354px;
+        object-fit: cover;
+        object-position:50% 50%;
+        padding-left:0px;
+        width: 100%;
+    }
+
+    footer {
+        background-color:#333637;
+        margin-top: 0px;
+        padding: 54px 0px 44px 0px;
+        z-index:1000;
+    }
+
+    .directions img {
+        height: 491px;
+        object-position: 50% 20%;
+        padding-top: 40px
+    }
+
 }
 
+
+
+
+
+
+
+/*table media queries*/
+
+@media screen and (max-width: 1200px) {
+    .menus-container {
+      grid-template-columns: 1fr 1fr;
+    }  
+}
+
+@media screen and (max-width: 900px) {
+    .menus-container {
+      grid-template-columns: 1fr;
+    }
+}

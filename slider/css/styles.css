@@ -1,0 +1,17 @@
+.tns-outer {
+    
+}
+
+.tns-controls {
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between
+}
+
+
+.tns-controls button {
+    background-color: white;
+    border: 1px solid black;
+    margin-right: 1rem;
+    padding: .5rem 1rem;
+}
