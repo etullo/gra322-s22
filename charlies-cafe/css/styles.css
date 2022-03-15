@@ -47,11 +47,12 @@ nav{
     padding: 32px 80px;
     position: absolute;
     top: 0px;
-    width: 100%;
+    right: 0;
     z-index: 1000;
 }
 .nav-links{
-    float: right;
+    margin-left: auto;
+    margin-right: 0;
 }
 nav ul li {
     display: inline-block;
@@ -173,10 +174,9 @@ ul {
 }
   
 
-
 /*menu sections*/
 .menu-container {
-    background-image: url(/img/marble.jpg);
+    background-image: url(../img/marble.jpg);
     background-size: cover;
     padding-top: 71px;
   }
@@ -228,8 +228,7 @@ td:first-child {
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 85px;
     margin-right: 85px;
-  }
-  
+  }  
 
 
 
