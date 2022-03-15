@@ -76,6 +76,7 @@ nav ul li a:hover{
 .burger {
     display: none;
     z-index:1001;
+    cursor: pointer;
 }
 .burger div {
     background-color: white;
@@ -469,10 +470,11 @@ a {
     .directions img {
         height: 491px;
         object-position: 50% 20%;
-        padding-top: 40px
+        padding-top: 40px;
     }
 
     footer {
+        margin-top:0px;
         grid-template-columns: 1fr 1fr;
     }
 
