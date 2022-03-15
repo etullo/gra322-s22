@@ -96,7 +96,7 @@ nav ul li a:hover{
     margin-left: 85px;
 }
 
-h1 {
+h2 {
     color: #000;
     font-size: 36pt;
     font-weight: bold;
@@ -104,12 +104,12 @@ h1 {
     text-transform: uppercase;
     }
 
-h1 span {
+h2 span {
     background-color: #F07300;
     padding: 10px 40px 11px 85px;
 }
   
-h2 {
+h3 {
     font-size: 36pt;
     font-weight: bold;
     letter-spacing: 5pt;
@@ -119,7 +119,7 @@ h2 {
     text-transform: uppercase;    
 } 
 
-h3 {
+h4 {
     font-size: 28pt;
     font-weight: bold;
 }
@@ -257,7 +257,7 @@ footer {
     z-index:1000;
 }
 
-footer h3 {
+footer h4 {
     color: white;
     font-size: 18px;
     font-weight: 400;
@@ -315,15 +315,15 @@ a {
     }
 
 /*type sizes and margins*/    
-    h1 {
+    h2 {
         font-size: 32pt;
     }
 
-    h2 {
+    h3 {
         font-size: 32pt;
     } 
 
-    h3 {
+    h4 {
         font-size: 24pt;
     }
 
@@ -375,7 +375,7 @@ a {
     nav {
         height: 92vh;
         overflow: hidden;
-        padding: 32px 50px; 
+        padding: 32px 30px; 
         width:100%; 
     }
 
@@ -412,24 +412,24 @@ a {
 
 /*type sizes*/
     .content {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    h1 {
-        font-size: 28pt;
-    }
-    
-    h1 span {
-        padding: 10px 40px 11px 51px;
+        margin-left: 35px;
+        margin-right: 35px;
     }
 
     h2 {
         font-size: 28pt;
-        margin-left: 50px;
+    }
+    
+    h2 span {
+        padding: 10px 40px 11px 35px;
     }
 
     h3 {
+        font-size: 28pt;
+        margin-left: 35px;
+    }
+
+    h4 {
         font-size: 20pt;
     }
 
@@ -446,8 +446,8 @@ a {
     }
 
     .menus-container {
-        margin-left: 50px;
-        margin-right: 50px;   
+        margin-left: 35px;
+        margin-right: 35px;   
     }
 
     .twocolumn {
@@ -474,6 +474,8 @@ a {
     footer {
         margin-top:0px;
         grid-template-columns: 1fr 1fr;
+        padding-left:35px;
+        padding-right: 35px;
     }
 
     .social-icons {
