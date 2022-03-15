@@ -81,7 +81,7 @@ nav ul li a:hover{
     background-color: white;
     height: 1px;
     margin: 10px;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
     width: 25px;
 }
 
@@ -375,7 +375,7 @@ a {
 /*hero area and navigation*/
 
     nav {
-        height: 100vh;
+        height: 92vh;
         overflow: hidden;
         padding: 32px 50px;  
     }
@@ -513,16 +513,16 @@ a {
     transform: translateX(0%);
 }
 
-.toggle.line1 {
-    transform: rotate(-45deg) translate(-5px,6px);
-    color: black;
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-9px,6px);
+    background-color: black;
 }
 
-.toggle.line2 {
+.toggle .line2 {
     opacity: 0;
 }
 
-.toggle.line1 {
-    transform: rotate(45deg) translate(-5px,-6px);
-    color: black;
+.toggle .line3 {
+    transform: rotate(45deg) translate(-10px,-6px);
+    background-color: black;
 }
