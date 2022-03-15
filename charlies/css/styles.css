@@ -190,6 +190,7 @@ table {
     min-width: 250px;
     max-width: 350px;
     padding-bottom: 30px;
+    letter-spacing: 1.5pt;
   }
   
 table .header {
@@ -439,10 +440,12 @@ a {
 
     p {
         font-size: 18pt;
+        letter-spacing:.5pt;
     }    
 
     table {
         font-size: 18pt;
+        letter-spacing: .5pt;
     }
 
     table .header {
@@ -454,7 +457,7 @@ a {
       }
 
     td:first-child {
-        width:55%;
+        width:45%;
     }  
 
     .menus-container {
