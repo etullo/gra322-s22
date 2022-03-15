@@ -445,6 +445,14 @@ a {
         font-size: 20pt;
     }
 
+    td {
+        padding-right: 0px;
+      }
+
+    td:first-child {
+        width:55%;
+    }  
+
     .menus-container {
         margin-left: 35px;
         margin-right: 35px;   
