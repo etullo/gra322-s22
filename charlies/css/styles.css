@@ -6,6 +6,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;  
+  }
+
 /*hero area and navigation*/
 .showcase {
     align-items: center;
