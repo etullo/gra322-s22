@@ -58,6 +58,18 @@ a {
     grid-template-columns: 1fr;
     gap: 6vw;
 }
+
+.cover-grid a {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cover-grid p {
+    color:black;
+    justify-content: center
+}
+
 .progress-grid h3 {
     grid-column: 1 / 3;
 }
@@ -102,7 +114,7 @@ nav {
     display: block;
   }
   
-/*Tablet Code Media Query*/
+/*Desktop Code Media Query*/
 @media screen and (min-width: 480px) {
     body { 
         margin: 0 10.6vw 0 12vw;
@@ -131,7 +143,17 @@ nav {
         z-index:1;
         width: 77.4vw;
     }
+    .home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6vw;
+        padding-bottom: 40px;
+    }
 
+    .home h1{
+        grid-column: 1 / 2;
+    }
+    
     h1{ 
         grid-column: 2 / 3;
     }
@@ -161,7 +183,7 @@ nav {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2.8vw;
-        padding-bottom: 40px;
+        padding-bottom: 100px;
     }
 
     .progress-grid .nextrow {
