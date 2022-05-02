@@ -127,6 +127,18 @@ nav {
     display: block;
   }
   
+
+.video-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.video-wrapper iframe {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}  
+
 /*Desktop Code Media Query*/
 @media screen and (min-width: 480px) {
     body { 
@@ -199,6 +211,21 @@ nav {
     .final-grid iframe{
         grid-column: 2 / 9;
     }
+
+    .final-grid .video-wrapper{
+        grid-column: 2 / 9;
+    }
+
+    .video-wrapper {
+        width: 100%;
+        height: auto;
+    }
+    
+    .final-grid .video-wrapper iframe {
+        object-fit: cover;
+        width: 100%;
+        height: 700px;
+    }  
 
     .progress-grid {
         display: grid;
