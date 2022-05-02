@@ -44,6 +44,12 @@ a {
     text-decoration: none;
     color: #000000;
 }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .progress-grid {
     display: grid;
@@ -193,7 +199,7 @@ nav {
     .cover-grid {
         padding-top: 167px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 2.8vw;
     }
     .progress-grid h3 {
