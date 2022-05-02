@@ -189,15 +189,15 @@ nav {
 
 
     .final-grid img {
-        grid-column: 2 / 8;
+        grid-column: 2 / 9;
     }
 
     .final-grid a {
-        grid-column: 2/8
+        grid-column: 2 / 9;
     }
 
     .final-grid iframe{
-        grid-column: 2/8;
+        grid-column: 2 / 9;
     }
 
     .progress-grid {
